@@ -1,0 +1,109 @@
+{
+  "name": "iview",
+  "version": "0.9.14",
+  "title": "iView",
+  "description": "A high quality  UI components Library with Vue.js",
+  "homepage": "http://www.iviewui.com",
+  "keywords": [
+    "iview",
+    "vue",
+    "vue.js",
+    "component",
+    "components",
+    "ui",
+    "framework"
+  ],
+  "main": "dist/iview.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "webpack-dev-server --content-base test/ --open --inline --hot --compress --history-api-fallback --port 8081 --config build/webpack.dev.config.js",
+    "dist:style": "gulp --gulpfile build/build-style.js",
+    "dist:dev": "webpack --config build/webpack.dist.dev.config.js",
+    "dist:prod": "webpack --config build/webpack.dist.prod.config.js",
+    "dist": "npm run dist:style && npm run dist:dev && npm run dist:prod",
+    "lint": "eslint --fix --ext .js,.vue src",
+    "test": "npm run dist && npm run lint",
+    "prepublish": "npm run dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iview/iview.git"
+  },
+  "author": {
+    "name": "Aresn"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iview/iview/issues"
+  },
+  "dependencies": {
+    "async-validator": "^1.6.7",
+    "core-js": "^2.4.1",
+    "deepmerge": "^1.3.1",
+    "popper.js": "^0.6.4"
+  },
+  "peerDependencies": {
+    "vue": "^1.0.17"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^2.0.0",
+    "babel": "^6.3.13",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-runtime": "^6.11.6",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.12.2",
+    "eslint-plugin-html": "^1.7.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "html-loader": "^0.3.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "vue": "^1.0.26",
+    "vue-hot-reload-api": "^1.3.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.3",
+    "vue-router": "^0.7.13",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "gitHead": "e3e8335fae572aa30ff78078a9f591302325ac40",
+  "_id": "iview@0.9.14",
+  "_shasum": "492dcf50c9f2b89c9a9d9796fe412dd2eea5b346",
+  "_from": "iview@latest",
+  "_npmVersion": "2.15.1",
+  "_nodeVersion": "4.4.3",
+  "_npmUser": {
+    "name": "aresn",
+    "email": "admin@aresn.com"
+  },
+  "dist": {
+    "shasum": "492dcf50c9f2b89c9a9d9796fe412dd2eea5b346",
+    "tarball": "https://registry.npmjs.org/iview/-/iview-0.9.14.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "aresn",
+      "email": "admin@aresn.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/iview-0.9.14.tgz_1484212146187_0.1849202464800328"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/iview/-/iview-0.9.14.tgz"
+}
